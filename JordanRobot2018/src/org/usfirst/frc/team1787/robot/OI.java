@@ -3,11 +3,11 @@ package org.usfirst.frc.team1787.robot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.*;
 import edu.wpi.first.wpilibj.command.*;
-import edu.wpi.first.wpilibj.
+import edu.wpi.first.wpilibj.AnalogInput;
 
 public class OI {
 	
-	//Joystick information
+	//Joystick Setup
 	Joystick RStick = new Joystick(1);
 	Button button1 = new JoystickButton(RStick,1);
 	Button button2 = new JoystickButton(RStick,2);
@@ -16,5 +16,8 @@ public class OI {
 	Button button5 = new JoystickButton(RStick,5);
 	Button button6 = new JoystickButton(RStick,6);
 	Button button7 = new JoystickButton(RStick,7);
+	
+	double value;
+	value = RStick.getThrottle();
 	
 }
