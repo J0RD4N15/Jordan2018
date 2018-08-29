@@ -17,7 +17,5 @@ public class OI {
 	Button button6 = new JoystickButton(RStick,6);
 	Button button7 = new JoystickButton(RStick,7);
 	
-	double value;
-	value = RStick.getThrottle();
 	
 }
