@@ -10,12 +10,15 @@ package org.usfirst.frc.team1787.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.Compressor;
 
 
 public class Robot extends TimedRobot {
 
 	@Override
 	public void robotInit() {
+		Compressor c = new Compressor(0); 
+		c.setClosedLoopControl(true);
 
 	}
 
