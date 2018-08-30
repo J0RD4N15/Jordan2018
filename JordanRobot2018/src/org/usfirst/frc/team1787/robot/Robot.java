@@ -17,6 +17,7 @@ import edu.wpi.first.wpilibj.Joystick;
 public class Robot extends TimedRobot {
 	
 	Compressor C = new Compressor(0);
+	C.setClosedLoopControl(true);
 	
 	
 	
@@ -24,6 +25,7 @@ public class Robot extends TimedRobot {
 	//AAAAAAAAAH
 	private final int RIGHT_STICK = 1;
 	public Joystick RStick = new Joystick(RIGHT_STICK);
+	
 	
 
 	@Override
