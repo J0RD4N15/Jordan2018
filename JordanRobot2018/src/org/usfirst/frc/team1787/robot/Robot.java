@@ -11,14 +11,22 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.Compressor;
+import edu.wpi.first.wpilibj.Joystick;
 
 
 public class Robot extends TimedRobot {
+	
+	Compressor compressor = new Compressor(0);
+	compressor.setClosedLoopControl(true);
+	
+	
+	//AAAAAAAAAH
+	private final int RIGHT_STICK = 1;
+	private Joystick RStick = new Joystick(RIGHT_STICK);
+	
 
 	@Override
 	public void robotInit() {
-		Compressor c = new Compressor(0); 
-		c.setClosedLoopControl(true);
 
 	}
 

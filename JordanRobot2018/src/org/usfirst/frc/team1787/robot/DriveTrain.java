@@ -17,6 +17,8 @@ public class DriveTrain {
 	private WPI_VictorSPX leftFollower = new WPI_VictorSPX(LEFT_DRIVE_FOLLOWER_VICTOR_ID);
 	
 	//This might end up being gear shifting if I do it right
-	DoubleSolenoid GearShift = new DoubleSolenoid(,1);
+	DoubleSolenoid GearShift = new DoubleSolenoid(1,2);
+	
+	
 	
 }
