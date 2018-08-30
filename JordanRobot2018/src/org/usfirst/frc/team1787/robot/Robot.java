@@ -16,13 +16,14 @@ import edu.wpi.first.wpilibj.Joystick;
 
 public class Robot extends TimedRobot {
 	
-	Compressor compressor = new Compressor(0);
-	compressor.setClosedLoopControl(true);
+	Compressor C = new Compressor(0);
+	
+	
 	
 	
 	//AAAAAAAAAH
 	private final int RIGHT_STICK = 1;
-	private Joystick RStick = new Joystick(RIGHT_STICK);
+	public Joystick RStick = new Joystick(RIGHT_STICK);
 	
 
 	@Override

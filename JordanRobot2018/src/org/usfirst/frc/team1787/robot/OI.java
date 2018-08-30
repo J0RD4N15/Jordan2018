@@ -9,7 +9,7 @@ import org.usfirst.frc.team1787.robot.*;
 public class OI {
 	
 	//Button Setup
-	Button button1 = new JoystickButton(Robot.RStick,1);
+	Button button1 = new JoystickButton(org.usfirst.frc.team1787.robot.Robot.RStick,1);
 	Button button2 = new JoystickButton(,2);
 	Button button3 = new JoystickButton(RStick,3);
 	Button button4 = new JoystickButton(RStick,4);
